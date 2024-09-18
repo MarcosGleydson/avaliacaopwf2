@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo-search">
+            <h1 class="logo">Portal de Notícias</h1>
+            <form class="search-form">
+                <input type="text" placeholder="Pesquisar..." class="search-input">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="columns">
+        <article class="main-column">
+            <h2>Notícia Principal</h2>
+            <p>Principais notícias aqui.</p>
+        </article>
+
+        <aside class="secondary-column">
+            <h3>Destaques</h3>
+            <ul>
+                <li><a href="#">Notícia Em Destaque 1</a></li>
+                <li><a href="#">Notícia Em Destaque 2</a></li>
+            </ul>
+        </aside>
+
+        <aside class="third-column">
+            <h3>Publicidade</h3>
+            <div class="advertisement">
+                <h4>Desconto Especial em Livros!</h4>
+                <p>Compre seus livros favoritos com até 50% de desconto na Livraria. Ofertas por tempo limitado!</p>
+               <a href="http://www.publicitysitehere.com" target="_blank">Visite agora: www.publicitysitehere.com</a>
+            </div>
+        </aside>
+    </main>
+
+    <div class="config-buttons">
+        <button id="increase-font" class="styled-button">Aumentar Fonte</button>
+        <button id="decrease-font" class="styled-button">Diminuir Fonte</button>
+        <button id="toggle-contrast" class="styled-button contrast">Modo de Alto Contraste</button>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Marcos Gleydson. Todos os direitos reservados.</p>
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Termos de Serviço</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

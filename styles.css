@@ -1,0 +1,389 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.main-header {
+    background-color: #004080;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-search {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.search-form {
+    margin-left: 20px;
+    display: flex;
+}
+
+.search-input {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.search-button {
+    padding: 8px;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-button:hover {
+    background-color: #003366;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: 20px;
+}
+
+article {
+    flex: 2;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+}
+
+.main-footer {
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.footer-nav {
+    margin-top: 10px;
+}
+
+.footer-nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer-nav ul li {
+    margin: 0;
+}
+
+.footer-nav ul li a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.footer-nav ul li a:hover {
+    background-color: #007acc;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    article, aside {
+        margin-right: 0;
+    }
+}
+
+.config-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.config-buttons button {
+    margin: 0 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.styled-button {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.styled-button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.styled-button:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: scale(0.98);
+}
+
+.styled-button.contrast {
+    background-color: #28a745;
+}
+
+.styled-button.contrast:hover {
+    background-color: #218838;
+}
+
+.styled-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.main-column {
+    background-color: #ffffff;
+    flex: 2;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.main-column:hover {
+    transform: translateY(-5px);
+}
+
+.secondary-column {
+    background-color: #fafafa;
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.secondary-column:hover {
+    transform: translateY(-5px);
+}
+
+.secondary-column ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.secondary-column ul li {
+    margin-bottom: 10px;
+}
+
+.secondary-column ul li a {
+    display: block;
+    font-size: 1.2em;
+    color: #007acc;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+.secondary-column ul li a:hover {
+    background-color: #007acc;
+    color: white;
+}
+
+.third-column {
+    background-color: #f1f1f1;
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.third-column:hover {
+    transform: translateY(-5px);
+}
+
+.contact-page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.contact-page h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-page p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.contact-form {
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #005f99;
+}
+
+.high-contrast {
+    background-color: #000;
+    color: #fff;
+}
+
+.high-contrast .main-header {
+    background-color: #111;
+}
+
+.high-contrast header nav ul li a {
+    color: #fff;
+}
+
+.high-contrast main {
+    background-color: #111;
+}
+
+.high-contrast .main-column, .high-contrast .secondary-column, .high-contrast .third-column {
+    background-color: #222;
+}
+
+.high-contrast .main-footer {
+    background-color: #111;
+}
+
+.high-contrast .contact-page {
+    background-color: #222;
+}
+
+.high-contrast .contact-form input, .high-contrast .contact-form textarea {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+.high-contrast .submit-button {
+    background-color: #444;
+}
+
+.high-contrast .submit-button:hover {
+    background-color: #666;
+}
